@@ -10,6 +10,8 @@ def connect_to_db(db_type, config):
                 host=config['host'], user=config['user'], password=config['password'], database=config['database'])
         elif db_type == "postgresql":
             conn = psycopg2.connect(
+# This is a random comment
+
                 host=config['host'], user=config['user'], password=config['password'], dbname=config['database'])
         elif db_type == "mongodb":
             conn = pymongo.MongoClient(f"mongodb://{config['host']}:{config['port']}")
