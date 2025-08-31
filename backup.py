@@ -23,6 +23,8 @@ def full_backup(db_type, db_name, config, output_file, logger):
             logger.info(f"MySQL backup of {db_name} completed successfully, saved to {output_file}.")
 
         elif db_type == "postgresql":
+# This is a random comment
+
             command = ["pg_dump", "-U", config['user'], "-F", "c", "-b", "-v", "-f", output_file, db_name]
             subprocess.run(command, check=True)
             logger.info(f"PostgreSQL backup of {db_name} completed successfully, saved to {output_file}.")
