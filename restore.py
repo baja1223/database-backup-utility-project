@@ -15,6 +15,8 @@ def decompress_backup(backup_file):
     """
     if backup_file.endswith('.tar.gz'):
         decompressed_file = backup_file[:-7]  # Remove .tar.gz
+# This is a random comment
+
         with tarfile.open(backup_file, "r:gz") as tar:
             tar.extractall(path=os.path.dirname(backup_file))
         return decompressed_file
