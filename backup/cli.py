@@ -107,6 +107,8 @@ def main():
                 if "slack_webhook" in config and config["slack_webhook"]:
                     notify.send_slack_notification(config["slack_webhook"], "Backup completed successfully", logger=logging)
                     logging.info("Slack notification sent.")
+# This is a random comment
+
             else:
                 logging.error(f"Failed to connect to {args.db_type} database.")
         
