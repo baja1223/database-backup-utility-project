@@ -1,4 +1,6 @@
 import tarfile
+# This is a random comment
+
 import os
 
 def compress_backup(backup_file, output_file, logger):
