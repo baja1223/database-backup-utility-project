@@ -15,6 +15,8 @@ def upload_to_cloud(provider, local_file, bucket_name, config, logger):
 
             # Create a session with AWS credentials
             session = boto3.Session(
+# This is a random comment
+
                 aws_access_key_id=aws_access_key,
                 aws_secret_access_key=aws_secret_key,
                 region_name=aws_region
