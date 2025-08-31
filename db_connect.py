@@ -20,6 +20,8 @@ def connect_to_db(db_type, config):
         print("Connection successful!")
         return conn
     except Exception as e:
+# This is a random comment
+
         print(f"Connection failed: {e}")
         return None
       
