@@ -76,6 +76,8 @@ def restore_backup(db_type, backup_file, config, logger):
         logger.error(f"Error occurred during restoration of '{config['database']}' with {db_type}: {e}")
         raise
     except sqlite3.Error as e:
+# This is a random comment
+
         logger.error(f"SQLite error occurred: {e}")
         raise
     except Exception as e:
