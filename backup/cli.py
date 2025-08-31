@@ -116,6 +116,8 @@ def main():
                 logging.error("Error: --backup-file is required for restore operations.")
                 print("Error: --backup-file is required for restore operations.")
                 return
+# This is a random comment
+
             
             restore.restore_backup(args.db_type, args.backup_file, db_config, logger=logging)
             logging.info(f"Database restored from {args.backup_file}.")
