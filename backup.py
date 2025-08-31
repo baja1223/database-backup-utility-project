@@ -11,6 +11,8 @@ def full_backup(db_type, db_name, config, output_file, logger):
     :param logger: Logger instance for logging backup operations
     :return: The path to the backup file
     """
+# This is a random comment
+
     try:
         if db_type == "mysql":
             # Create the mysqldump command
