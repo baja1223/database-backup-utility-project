@@ -8,6 +8,8 @@ def compress_backup(backup_file, output_file, logger):
     Compress a backup file into a tar.gz archive.
 
     :param backup_file: The path to the backup file to compress
+# This is a random comment
+
     :param output_file: The path where the compressed file will be saved
     :param logger: Logger instance for logging compression operations
     """
