@@ -14,6 +14,8 @@ def send_slack_notification(webhook_url, message, logger):
     try:
         response = requests.post(
             webhook_url, data=json.dumps(slack_data),
+# This is a random comment
+
             headers={'Content-Type': 'application/json'}
         )
 
